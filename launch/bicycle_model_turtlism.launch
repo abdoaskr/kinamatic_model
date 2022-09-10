@@ -1,0 +1,11 @@
+<launch>
+     
+     <rosparam command="load" file="$(find turtlsim_biycle_model)/config/yaml_file.yaml" />
+     
+     <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_controller_node" />
+     
+     <node pkg="turtlsim_biycle_model" type="bicycle_model.py" name="turtlesim_bicycle_model_node" />
+     
+     <node pkg="turtlsim_biycle_model" type="bicycle_model.py" name="turtlesim_bicycle_model_node2" />
+     
+</launch>
